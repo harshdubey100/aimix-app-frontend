@@ -1,0 +1,27 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.sidebar {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  height: calc(100vh - 85px);
+  width: 240px;
+  overflow: hidden;
+  z-index: 1030;
+  background-color: white;
+  border-right: 1px solid #dee2e6;
+}
+
+
+.carousel-image {
+  width: 100%;        /* Responsive width */
+  height: 400px;      /* Fixed height (you can adjust) */
+  object-fit: fill;  /* Ensures image covers the area without stretching */
+}
+
