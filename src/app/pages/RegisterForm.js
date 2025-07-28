@@ -18,7 +18,7 @@ function RegisterForm() {
         setTimeout(() => {
           navigate("/");
         }, 2000);
-      } else if(res.data.msg === 409) {
+      } if(res.data.msg === 409) {
         toast.warning(res.data.msg || "Email Already Registered", { autoClose: 2000 });
       } else {
         toast.warning(res.data.msg || "Registration failed", { autoClose: 2000 });
