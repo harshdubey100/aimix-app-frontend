@@ -12,7 +12,7 @@ function RegisterForm() {
   const onFormSubmit = async (data) => {
     console.log("Submitting:", data);
     try {
-      const res = await axios.post('http://localhost:3001/userregister', data);
+      const res = await axios.post('https://aimix-app-backend-1.onrender.com/userregister', data);
       if (res.data.status === 251) {
         toast.success("Registered successfully!", { autoClose: 2000 });
         setTimeout(() => {
